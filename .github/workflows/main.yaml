@@ -1,0 +1,41 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install Dependencies
+        run: bun install
+
+      - name: Build
+        run: bun run build
+
+      - name: Get Current Time
+        id: current-time
+        run: echo "time=$(date +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_OUTPUT
+
+      - name: Deploy to Target Repository
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist #  build output directory
+          token: ${{ secrets.DEPLOY_TOKEN }} # The GitHub token to use for deployment
+          repository-name: huikaihoo/cash-rebate-hk-data
+          branch: main # The branch to deploy to
+          clean: true # Automatically remove deleted files from the deploy branch
+          commit-message: 'Deploy ${{ github.sha }} @ ${{ steps.current-time.outputs.time }}'
+          single-commit: false # Preserves commit history
