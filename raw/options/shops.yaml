@@ -1,0 +1,35 @@
+name: shops
+sortBy: key
+content:
+  - fastfood:
+      mcdonalds: 麥當勞 McDonald's
+      kfc: 肯德基 KFC
+  - supermarket:
+      parknshop: 百佳 PARKnSHOP
+      wellcome: 惠康 Wellcome
+      donki: 唐吉訶德 Don Don Donki
+  - departmentStore:
+      sogo: 崇光百貨 SOGO
+      aeon: 永旺 AEON
+  - convenienceStore:
+      7eleven: 7-Eleven
+      circlek: OK 便利店 Circle K
+  - electronics:
+      fortress: 豐澤 Fortress
+      broadway: 百老匯 Broadway
+      yoho: 友和 YOHO
+  - any:
+      uniqlo: 優衣庫 Uniqlo
+      watsons: 屈臣氏 Watsons
+      mannings: 萬寧 Mannings
+      starbucks: 星巴克 Starbucks
+  - red2025LifeStyle:
+      klook: Klook
+  - red2025Home:
+      yoho: 友和 YOHO
+      parknshop: 百佳 PARKnSHOP
+      donki: 唐吉訶德 Don Don Donki
+      fortress: 豐澤 Fortress
+      broadway: 百老匯 Broadway
+  - red2025Shopping:
+      aeon: 永旺 AEON

@@ -1,0 +1,36 @@
+name: categories
+sortBy: default
+content:
+  restaurant:
+    en: 'Restaurant (excl. fast food)'
+    zh: '餐廳 (不包括快餐店)'
+  fastfood:
+    en: 'Fast Food'
+    zh: '快餐店'
+  supermarket:
+    en: 'Supermarket'
+    zh: '超級市場'
+  departmentStore:
+    en: 'Department Store'
+    zh: '百貨公司'
+  hotel:
+    en: 'Hotel'
+    zh: '酒店'
+  electronics:
+    en: 'Electronics'
+    zh: '電子產品'
+  travel:
+    en: 'Travel'
+    zh: '旅遊'
+  transportation:
+    en: 'Transportation'
+    zh: '交通'
+  entertainment:
+    en: 'Entertainment'
+    zh: '娛樂'
+  tax:
+    en: 'Tax Payment'
+    zh: '稅項'
+  ebanking:
+    en: 'Payment via e-banking'
+    zh: '網上繳費'

@@ -1,0 +1,54 @@
+name: Citi Cash Back Card
+bank: citi
+type: credit
+links:
+  official:
+    en: https://www.citibank.com.hk/english/credit-cards/cash-back-card
+    zh: https://www.citibank.com.hk/chinese/credit-cards/cash-back-card
+  rebate:
+    en: https://www.citibank.com.hk/english/credit-cards/cashback-card-spending-rebate-tnc
+    zh: https://www.citibank.com.hk/chinese/credit-cards/cashback-card-spending-rebate-tnc
+  charges:
+    en: https://www.citibank.com.hk/english/credit-cards/pdf/fee-schedule.pdf
+    zh: https://www.citibank.com.hk/chinese/credit-cards/pdf/fee-schedule.pdf
+annualFee:
+  fee: 1800
+  chargeAfter: 1
+  waiverCondition: manual
+charges:
+  fcc: 1.95
+  cbf: 0
+rebateList:
+  - level: 1
+    percentage: 2
+    location:
+      exclude:
+        - uk
+        - eea
+    channel:
+      online: true
+      physical: true
+      local: false
+      overseas: true
+  - level: 1
+    percentage: 2
+    categories:
+      include:
+        - restaurant
+        - hotel
+    channel:
+      online: false
+      physical: true
+      local: true
+      overseas: false
+  - level: 0
+    percentage: 1
+    channel:
+      online: true
+      physical: true
+      local: true
+      overseas: true
+    excludeCbf: true
+rebateRemarks:
+  en: Rebates automatically credited monthly after accumulating over $200.
+  zh: 回贈累積超過$200後將自動每月存入。

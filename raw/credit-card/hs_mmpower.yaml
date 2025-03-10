@@ -1,0 +1,78 @@
+name: Hang Seng MMPOWER World Mastercard
+bank: hs
+type: credit
+links:
+  official:
+    zh: https://www.hangseng.com/zh-hk/personal/cards/products/mmpower-card/
+    en: https://www.hangseng.com/en-hk/personal/cards/products/mmpower-card/
+  rebate:
+    zh: https://www.hangseng.com/content/dam/wpb/hase/rwd/personal/cards/pdfs/everyday_tnc_tc.pdf
+    en: https://www.hangseng.com/content/dam/wpb/hase/rwd/personal/cards/pdfs/everyday_tnc_en.pdf
+  charges:
+    zh: https://www.hangseng.com/content/dam/wpb/hase/config/personal/cards/pdfs/zh_HK/terms_xcard_tchi.pdf
+    en: https://www.hangseng.com/content/dam/wpb/hase/config/personal/cards/pdfs/en_HK/terms_xcard_eng.pdf
+annualFee:
+  fee: 0
+  chargeAfter: 0
+  waiverCondition: auto
+charges:
+  fcc: 1.95
+  cbf: 1
+rebateList:
+  - level: 3
+    percentage: 6
+    channel:
+      online: true
+      physical: true
+      local: false
+      overseas: true
+    startDate: 2024-07-01
+    endDate: 2025-12-31
+    minAmount: 5000
+    minPeriod: monthly
+    maxAmount: 8928
+    maxPeriod: monthly
+  - level: 2
+    percentage: 5
+    channel:
+      online: true
+      physical: false
+      local: true
+      overseas: true
+    startDate: 2024-07-01
+    endDate: 2025-12-31
+    minAmount: 5000
+    minPeriod: monthly
+    maxAmount: 10869
+    maxPeriod: monthly
+  - level: 1
+    percentage: 1
+    categories:
+      include:
+        - restaurant
+        - electronics
+        - entertainment
+    channel:
+      online: true
+      physical: true
+      local: true
+      overseas: false
+    startDate: 2024-07-01
+    endDate: 2025-12-31
+    minAmount: 5000
+    minPeriod: monthly
+    maxAmount: 83333
+    maxPeriod: monthly
+    remarks:
+      zh: 從餐廳(快餐店除外)、電子產品、娛樂中選擇2個類別獲得回贈
+      en: Choose 2 categories from Restaurant(excluding fast food), Electronics, or Entertainment for rebate.
+  - level: 0
+    percentage: 0.4
+    channel:
+      online: true
+      physical: true
+      local: true
+      overseas: true
+rebateRemarks:
+  zh: 經指定網頁登記後方可獲回贈。每月回贈上限為$500(不包括基本回贈)，需要在手機應用程式自行兌換。
+  en: Registration via website required. Monthly rebate capped at $500 (base rebates excluded), redemption via mobile app required.

@@ -1,0 +1,41 @@
+name: SC Simply Cash Visa
+bank: sc
+type: credit
+links:
+  official:
+    zh: https://www.sc.com/hk/zh/credit-cards/simplycash/
+    en: https://www.sc.com/hk/credit-cards/simplycash/
+  rebate:
+    zh: https://av.sc.com/hk/zh/content/docs/hk-promo-simply-cash-tnc.pdf
+    en: https://av.sc.com/hk/zh/content/docs/hk-promo-simply-cash-tnc.pdf
+  charges:
+    zh: https://av.sc.com/hk/zh/content/docs/hk-service-charges-zh.pdf
+    en: https://av.sc.com/hk/content/docs/hk-service-charges-en.pdf
+annualFee:
+  fee: 2000
+  chargeAfter: 1
+  waiverCondition: auto
+  remarks:
+    zh: 符合最低總結餘要求的優先/Premium理財戶口或出糧戶口客戶可享年費豁免。
+    en: Priority / Premium Banking clients meeting minimum balance requirement, or Payroll account clients receive annual fee waiver.
+charges:
+  fcc: 1.95
+  cbf: 1
+rebateList:
+  - level: 2
+    percentage: 2.0
+    channel:
+      online: true
+      physical: true
+      local: false
+      overseas: true
+  - level: 1
+    percentage: 1.5
+    channel:
+      online: true
+      physical: true
+      local: true
+      overseas: false
+rebateRemarks:
+  zh: 需要在360°全面賞平台自行兌換，最低兌換額為$50。
+  en: Redemption via 360° Rewards Redemption Platform required, with minimum threshold of $50.

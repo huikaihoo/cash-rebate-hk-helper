@@ -1,0 +1,71 @@
+name: DBS Eminent Visa Signature Card
+bank: dbs
+type: credit
+links:
+  official:
+    en: https://www.dbs.com.hk/personal/credit-cards/credit-cards/eminent-card
+    zh: https://www.dbs.com.hk/personal-zh/credit-cards/credit-cards/eminent-card
+  rebate:
+    en: https://www.dbs.com.hk/personal/promotion/eminent-5percent-cashrebate
+    zh: https://www.dbs.com.hk/personal-zh/promotion/eminent-5percent-cashrebate
+  charges:
+    en: https://www.dbs.com.hk/iwov-resources/pdf/creditcards/HK_CPF_CSV_0036.pdf
+    zh: https://www.dbs.com.hk/iwov-resources/pdf/creditcards/HK_CPF_CSV_0036.pdf
+annualFee:
+  fee: 2000
+  chargeAfter: 1
+  waiverCondition: manual
+charges:
+  fcc: 1.95
+  cbf: 1
+rebateList:
+  - level: 2
+    percentage: 5
+    categories:
+      include:
+        - restaurant
+        - fastfood
+        - medical
+        - sportswear
+        - fitness
+    channel:
+      online: true
+      physical: true
+      local: true
+      overseas: true
+    excludeCbf: true
+    minAmount: 300
+    minPeriod: payment
+    maxAmount: 8000
+    maxPeriod: monthly
+    startDate: 2025-01-01
+    endDate: 2025-12-31
+  - level: 1
+    percentage: 1
+    channel:
+      online: true
+      physical: true
+      local: true
+      overseas: true
+    excludeCbf: true
+    maxAmount: 20000
+    maxPeriod: monthly
+    startDate: 2025-01-01
+    endDate: 2025-12-31
+    remarks:
+      en: Only first $5,000 digital wallet spending eligible for monthly rebate.
+      zh: 每月首$5,000數碼錢包消費方可獲回贈。
+  - level: 0
+    percentage: 0.4
+    channel:
+      online: true
+      physical: true
+      local: true
+      overseas: true
+    excludeCbf: true
+    remarks:
+      en: Only first $5,000 digital wallet spending eligible for monthly rebate.
+      zh: 每月首$5,000數碼錢包消費方可獲回贈。
+rebateRemarks:
+  en: Annual registration via DBS Card+ app required for rebates. Rebates credited automatically monthly.
+  zh: 每年須經DBS Card+應用程式登記方可獲回贈。回贈每月自動存入。

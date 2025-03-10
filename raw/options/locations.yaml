@@ -1,0 +1,18 @@
+name: locations
+sortBy: default
+content:
+  cn: '🇨🇳 中國內地 Mainland China'
+  mo: '🇲🇴 澳門 Macau'
+  tw: '🇹🇼 台灣 Taiwan'
+  jp: '🇯🇵 日本 Japan'
+  kr: '🇰🇷 韓國 South Korea'
+  th: '🇹🇭 泰國 Thailand'
+  sg: '🇸🇬 新加坡 Singapore'
+  my: '🇲🇾 馬來西亞 Malaysia'
+  uk: '🇬🇧 英國 United Kingdom'
+  eea: '🇪🇺 歐洲經濟區 Europe (EEA)'
+  us: '🇺🇸 美國 United States'
+  ca: '🇨🇦 加拿大 Canada'
+  au: '🇦🇺 澳洲 Australia'
+  nz: '🇳🇿 紐西蘭 New Zealand'
+  others: '🌏 其他 Others'

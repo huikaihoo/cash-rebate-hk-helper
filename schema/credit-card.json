@@ -1,0 +1,243 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "bank": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "credit",
+        "debit",
+        "wallet"
+      ],
+      "type": "string"
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "official": {
+          "$ref": "#/definitions/DisplayText"
+        },
+        "rebate": {
+          "$ref": "#/definitions/DisplayText"
+        },
+        "charges": {
+          "$ref": "#/definitions/DisplayText"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "charges",
+        "official",
+        "rebate"
+      ]
+    },
+    "annualFee": {
+      "type": "object",
+      "properties": {
+        "fee": {
+          "type": "number"
+        },
+        "chargeAfter": {
+          "type": "number"
+        },
+        "waiverCondition": {
+          "enum": [
+            "auto",
+            "forbidden",
+            "manual"
+          ],
+          "type": "string"
+        },
+        "remarks": {
+          "$ref": "#/definitions/DisplayText"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "chargeAfter",
+        "fee",
+        "waiverCondition"
+      ]
+    },
+    "charges": {
+      "type": "object",
+      "properties": {
+        "fcc": {
+          "type": "number"
+        },
+        "cbf": {
+          "type": "number"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "cbf",
+        "fcc"
+      ]
+    },
+    "rebateList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/RawRebate"
+      }
+    },
+    "rebateRemarks": {
+      "$ref": "#/definitions/DisplayText"
+    },
+    "remarks": {
+      "$ref": "#/definitions/DisplayText"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "annualFee",
+    "bank",
+    "charges",
+    "links",
+    "name",
+    "rebateList",
+    "type"
+  ],
+  "definitions": {
+    "DisplayText": {
+      "type": "object",
+      "properties": {
+        "zh": {
+          "type": "string"
+        },
+        "en": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "en",
+        "zh"
+      ]
+    },
+    "RawRebate": {
+      "type": "object",
+      "properties": {
+        "level": {
+          "type": "number"
+        },
+        "percentage": {
+          "type": "number"
+        },
+        "categories": {
+          "type": "object",
+          "properties": {
+            "include": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "exclude": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "shops": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "location": {
+          "type": "object",
+          "properties": {
+            "include": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "exclude": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "channel": {
+          "type": "object",
+          "properties": {
+            "online": {
+              "type": "boolean"
+            },
+            "physical": {
+              "type": "boolean"
+            },
+            "local": {
+              "type": "boolean"
+            },
+            "overseas": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "local",
+            "online",
+            "overseas",
+            "physical"
+          ]
+        },
+        "excludeCbf": {
+          "type": "boolean"
+        },
+        "startDate": {
+          "type": "string"
+        },
+        "endDate": {
+          "type": "string"
+        },
+        "minAmount": {
+          "type": "number"
+        },
+        "minPeriod": {
+          "enum": [
+            "cycle",
+            "monthly",
+            "payment",
+            "yearly"
+          ],
+          "type": "string"
+        },
+        "maxAmount": {
+          "type": "number"
+        },
+        "maxPeriod": {
+          "enum": [
+            "cycle",
+            "monthly",
+            "payment",
+            "yearly"
+          ],
+          "type": "string"
+        },
+        "remarks": {
+          "$ref": "#/definitions/DisplayText"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "channel",
+        "level",
+        "percentage"
+      ]
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
