@@ -25,6 +25,14 @@ jobs:
       - name: Build
         run: bunx --bun bun run build
 
+      - name: Get Short SHA
+        id: short-sha
+        run: echo "sha=$(git rev-parse --short ${{ github.sha }})" >> $GITHUB_OUTPUT
+
+      - name: Create Commit URL
+        id: commit-url
+        run: echo "url=https://github.com/huikaihoo/cash-rebate-hk-helper/commit/${{ github.sha }}" >> $GITHUB_OUTPUT
+
       - name: Get Current Time
         id: current-time
         run: echo "time=$(date +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_OUTPUT
@@ -37,5 +45,5 @@ jobs:
           repository-name: huikaihoo/cash-rebate-hk-data
           branch: main # The branch to deploy to
           clean: true # Automatically remove deleted files from the deploy branch
-          commit-message: 'Deploy ${{ github.sha }} @ ${{ steps.current-time.outputs.time }}'
+          commit-message: 'Deploy [${{ steps.short-sha.outputs.sha }}](${{ steps.commit-url.outputs.url }}) @ ${{ steps.current-time.outputs.time }}'
           single-commit: false # Preserves commit history
