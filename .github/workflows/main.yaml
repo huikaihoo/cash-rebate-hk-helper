@@ -23,7 +23,7 @@ jobs:
         run: bun install
 
       - name: Build
-        run: bun run build
+        run: bunx --bun bun run build
 
       - name: Get Current Time
         id: current-time
