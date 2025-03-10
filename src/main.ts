@@ -1,6 +1,6 @@
 async function loadFileList() {
   try {
-    const response = await fetch('/list.json')
+    const response = await fetch('list.json')
     if (!response.ok) {
       throw new Error('Failed to load file list')
     }

@@ -27,7 +27,7 @@ export default function WebpServePlugin(options: WebpServeOptions = {}): Plugin 
   return {
     name: 'vite-plugin-webp-serve',
     configureServer(server) {
-      server.middlewares.use(async (req, res, next) => {
+      server.middlewares.use(server.config.base, async (req, res, next) => {
         const url = req.url ?? ''
         const ext = url.split('.').pop()?.toLowerCase()
         if (!ext || ext !== 'webp' || exclude.some((path) => url.includes(path))) {

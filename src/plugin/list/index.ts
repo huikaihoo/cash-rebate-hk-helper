@@ -1,5 +1,6 @@
 import { readdirSync, statSync, writeFileSync } from 'fs'
 import { resolve } from 'path'
+import { join } from 'path'
 import { Plugin } from 'vite'
 
 interface PublicFileListOptions {
@@ -32,7 +33,7 @@ function getPublicFiles(dir: string, baseDir: string, options: PublicFileListOpt
       const shouldExclude = exclude && exclude.test(relativePath)
 
       if (shouldInclude && !shouldExclude) {
-        files.push(relativePath)
+        files.push(relativePath.replace(/^\//, ''))
       }
     } else if (stat.isDirectory()) {
       files.push(...getPublicFiles(fullPath, baseDir, options))
@@ -55,7 +56,7 @@ export default function PublicFileList(options: PublicFileListOptions = {}): Plu
       isBuildMode = command === 'build'
     },
     configureServer(server) {
-      server.middlewares.use('/list.json', (_, res) => {
+      server.middlewares.use(join(server.config.base, 'list.json'), (_, res) => {
         try {
           const files = getPublicFiles(publicDir, publicDir, options)
           res.setHeader('Content-Type', 'application/json')

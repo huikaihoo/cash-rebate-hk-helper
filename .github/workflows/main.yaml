@@ -33,10 +33,6 @@ jobs:
         id: commit-url
         run: echo "url=https://github.com/huikaihoo/cash-rebate-hk-helper/commit/${{ github.sha }}" >> $GITHUB_OUTPUT
 
-      - name: Get Current Time
-        id: current-time
-        run: echo "time=$(date +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_OUTPUT
-
       - name: Deploy to Target Repository
         uses: JamesIves/github-pages-deploy-action@v4
         with:
@@ -45,5 +41,5 @@ jobs:
           repository-name: huikaihoo/cash-rebate-hk-data
           branch: main # The branch to deploy to
           clean: true # Automatically remove deleted files from the deploy branch
-          commit-message: 'Deploy [${{ steps.short-sha.outputs.sha }}](${{ steps.commit-url.outputs.url }}) @ ${{ steps.current-time.outputs.time }}'
+          commit-message: 'Deploy ${{ steps.short-sha.outputs.sha }} (${{ steps.commit-url.outputs.url }})'
           single-commit: false # Preserves commit history
