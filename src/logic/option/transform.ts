@@ -1,5 +1,6 @@
 import _ from 'lodash'
 
+import { cleanLocales, DisplayText, Locales, LocalesRecord } from '@/logic/locales'
 import type { Options, OptionsRecord } from '@/logic/option/model'
 import type { RawOptions } from '@/logic/option/raw'
 
@@ -8,18 +9,30 @@ function extractCompareReference(value: OptionsRecord, sortBy: 'key' | 'value'):
   return Array.isArray(value) ? (Array.isArray(value[index]) ? value[0] : value[index]) : value
 }
 
+function updateOptionsLocales(locales: Locales, optionName: string, key: string, value: DisplayText): void {
+  ;(locales.en[optionName] as LocalesRecord)[key] = value.en
+  ;(locales.zh[optionName] as LocalesRecord)[key] = value.zh
+}
+
 /**
  * Transforms raw options into a structured format.
  *
  * @param raw - The raw options to transform.
  * @returns The transformed options.
  */
-export function transformOptions(rawOptions: RawOptions[]): Options {
-  const result: Options = {}
+export function transformOptions(rawOptions: RawOptions[]): {
+  options: Options
+  optionsLocales: Locales
+} {
+  const options: Options = {}
+  const locales: Locales = { en: {}, zh: {} }
 
   rawOptions.forEach((rawOption) => {
     const optionName = rawOption.name
-    result[optionName] = []
+
+    options[optionName] = []
+    locales.en[optionName] = {} as LocalesRecord
+    locales.zh[optionName] = {} as LocalesRecord
 
     if (Array.isArray(rawOption.content)) {
       const recordMap = new Map<string, OptionsRecord>()
@@ -43,20 +56,22 @@ export function transformOptions(rawOptions: RawOptions[]): Options {
                 const existing = recordMap.get(key) as [string, string[]]
                 existing[1] = _.union(existing[1], [groupName]) // Deduplicate groups
               }
+              updateOptionsLocales(locales, optionName, key, value)
             }
           })
         })
       })
 
       // Convert Map values to array
-      result[optionName].push(...recordMap.values())
+      options[optionName].push(...recordMap.values())
     } else {
       // Handle simple record format
       Object.entries(rawOption.content).forEach(([key, value]) => {
         if (typeof value === 'string') {
-          result[optionName].push([key, value])
+          options[optionName].push([key, value])
         } else {
-          result[optionName].push(key)
+          options[optionName].push(key)
+          updateOptionsLocales(locales, optionName, key, value)
         }
       })
     }
@@ -64,7 +79,7 @@ export function transformOptions(rawOptions: RawOptions[]): Options {
     // Sort the options based on the sortBy field
     const sortBy = rawOption.sortBy
     if (sortBy !== 'default') {
-      result[optionName].sort((a, b) => {
+      options[optionName].sort((a, b) => {
         const refA = extractCompareReference(a, sortBy)
         const refB = extractCompareReference(b, sortBy)
         return refA.localeCompare(refB)
@@ -72,5 +87,5 @@ export function transformOptions(rawOptions: RawOptions[]): Options {
     }
   })
 
-  return result
+  return { options, optionsLocales: cleanLocales(locales) }
 }

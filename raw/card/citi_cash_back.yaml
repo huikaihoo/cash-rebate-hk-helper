@@ -35,6 +35,7 @@ rebateList:
     categories:
       include:
         - restaurant
+        - fastfood
         - hotel
     channel:
       online: false

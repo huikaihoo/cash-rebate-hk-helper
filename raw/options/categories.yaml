@@ -28,6 +28,15 @@ content:
   entertainment:
     en: 'Entertainment'
     zh: '娛樂'
+  red2025LifeStyle:
+    en: 'Lifestyle - Red Hot Rewards 2025'
+    zh: '賞享受 - 滙豐最紅 2025'
+  red2025Home:
+    en: 'Home - Red Hot Rewards 2025'
+    zh: '賞家居 - 滙豐最紅 2025'
+  red2025Shopping:
+    en: 'Shopping - Red Hot Rewards 2025'
+    zh: '賞購物 - 滙豐最紅 2025'
   tax:
     en: 'Tax Payment'
     zh: '稅項'

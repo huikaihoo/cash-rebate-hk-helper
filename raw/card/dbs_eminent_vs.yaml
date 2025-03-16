@@ -54,7 +54,7 @@ rebateList:
     endDate: 2025-12-31
     remarks:
       en: Only first $5,000 digital wallet spending eligible for monthly rebate.
-      zh: 每月首$5,000數碼錢包消費方可獲回贈。
+      zh: 每月首 $5,000 電子錢包消費方可獲回贈。
   - level: 0
     percentage: 0.4
     channel:
@@ -65,7 +65,7 @@ rebateList:
     excludeCbf: true
     remarks:
       en: Only first $5,000 digital wallet spending eligible for monthly rebate.
-      zh: 每月首$5,000數碼錢包消費方可獲回贈。
+      zh: 每月首 $5,000 電子錢包消費方可獲回贈。
 rebateRemarks:
   en: Annual registration via DBS Card+ app required for rebates. Rebates credited automatically monthly.
   zh: 每年須經DBS Card+應用程式登記方可獲回贈。回贈每月自動存入。

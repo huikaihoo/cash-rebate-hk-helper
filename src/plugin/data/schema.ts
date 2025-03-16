@@ -11,8 +11,8 @@ export function createSchema() {
 
   const types = [
     {
-      typeName: 'RawCreditCard',
-      outputFile: 'credit-card.json',
+      typeName: 'RawCard',
+      outputFile: 'card.json',
     },
     {
       typeName: 'RawOptions',

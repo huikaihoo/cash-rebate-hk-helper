@@ -22,8 +22,8 @@ export class Exporter {
    * @param filename The name of the file (without path and extension)
    * @returns The full file path that was written
    */
-  exportObject(data: any[] | Record<string, any>, filename: string): string {
-    const length = Array.isArray(data) ? data.length : Object.keys(data).length
+  exportObject(data: Record<string, any>, filename: string): string {
+    const length = Object.keys(data).length
     const filePath = join(process.cwd(), this.config.basePath, `${filename}.json`)
 
     // Always create directory if it doesn't exist

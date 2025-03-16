@@ -65,7 +65,7 @@ rebateList:
     maxPeriod: monthly
     remarks:
       zh: 從餐廳(快餐店除外)、電子產品、娛樂中選擇2個類別獲得回贈
-      en: Choose 2 categories from Restaurant(excluding fast food), Electronics, or Entertainment for rebate.
+      en: Choose 2 categories from Restaurant (excluding fast food), Electronics, or Entertainment for rebate.
   - level: 0
     percentage: 0.4
     channel:

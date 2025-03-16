@@ -6,6 +6,8 @@ content:
       kfc: 肯德基 KFC
   - supermarket:
       parknshop: 百佳 PARKnSHOP
+      parknshop2: (PARKnSHOP) FUSION / TASTE / TASTE x FRESH / INTERNATIONAL
+      parknshop3: (PARKnSHOP) food le parc / GOURMET / Great Food Hall
       wellcome: 惠康 Wellcome
       donki: 唐吉訶德 Don Don Donki
   - departmentStore:
@@ -18,18 +20,195 @@ content:
       fortress: 豐澤 Fortress
       broadway: 百老匯 Broadway
       yoho: 友和 YOHO
-  - any:
+  - general:
       uniqlo: 優衣庫 Uniqlo
       watsons: 屈臣氏 Watsons
       mannings: 萬寧 Mannings
       starbucks: 星巴克 Starbucks
   - red2025LifeStyle:
+      # Fitness Centers
+      beEarth: Be Earth
+      pureGroup: PURE Group
+      snapFitness: Snap Fitness
+      squareFitness: Square Fitness
+      # Cinemas
+      cgvCinemas: CGV Cinemas
+      emperorCinemas: 英皇戲院 Emperor Cinemas
+      festivalGrandCinema: Festival Grand Cinema
+      goldenHarvestCinemas: 嘉禾院線 Golden Harvest Cinemas
+      grandKornhillCinema: 康怡戲院 Grand Kornhill Cinema
+      grandWindsorCinema: 皇室戲院 Grand Windsor Cinema
+      k11ArtHouse: K11 Art House
+      mcl: MCL Cinema
+      movieTown: Movie Town
+      stagE: StagE
+      starCinema: STAR Cinema
+      theSky: the sky
+      # Entertainment
+      bakebe: 焙著你烘焙 bakebe
+      cityline: 購票通 Cityline
+      efEnglishCenters: EF English Centers
+      greeneryMusic: 青苗琴行 Greenery Music
+      hkTicketing: 快達票 HKTicketing
+      kkbox: KKBOX
+      kktix: KKTIX
+      moov: Moov
+      newayCeoKaraoke: Neway CEO Karaoke
+      tomLeeMusic: 通利琴行 Tom Lee Music
+      # Travel Agents
+      hutchgo: hutchgo
+      kkday: KKDay
       klook: Klook
+      miramarTravel: 美麗華旅遊 Miramar Travel
+      sunflowerTravel: 新華旅遊 Sunflower Travel
+      tripCom: Trip.com
+      wingOnTravel: 永安旅遊 Wing On Travel
+      ymtTravel: 油麻地旅遊 YMT Travel
+      # Personal Wellness
+      mooodMassage: 沐館 Moood Massage
+      shhMassage: 靜 shh massage
+      sunAndMoonMassage: 日月按摩 Sun and Moon Massage
+      toniGuyHongKong: TONI&GUY HONG KONG
+      ziMassageWellness: 梔 Zi Massage & Wellness
+      # Transportation
+      caltex: 加德士 Caltex
+      citybus: 城巴 Citybus
+      esso: 埃索 Esso
+      hkeToll: 易通行 HKeToll
+      hkTramways: 香港電車 HK Tramways
+      kmb: 九巴 KMB
+      mtr: 港鐵 MTR
+      shell: 蜆殼 Shell / Shell Recharge
   - red2025Home:
-      yoho: 友和 YOHO
-      parknshop: 百佳 PARKnSHOP
+      # Supermarkets
+      759Store: 759 阿信屋 759 Store
+      bigC: Big C
+      dayDayStore: 日記士多 Day Day Store
       donki: 唐吉訶德 Don Don Donki
+      dsGroceries: 大生生活超市 DS Groceries
+      xinXianShengHuo: 新鮮生活 FRESH
+      greenPrice: GreenPrice
+      hongKongFlavour: 本灣水產 Hong Kong Flavour
+      parknshop: 百佳 PARKnSHOP
+      parknshop2: (PARKnSHOP) FUSION / TASTE / TASTE x FRESH / INTERNATIONAL
+      parknshop3: (PARKnSHOP) food le parc / GOURMET / Great Food Hall
+      jhcSmart: 多來買 $mart
+      # Home and Furniture
+      homeAndFurniture: 家居用品 Home and Furniture
+      atHome: at.home
+      cityLife: 生活提案 City Life
+      homeByElla: 生活工房 Home+ By Ella
+      jhc: 日本城 Japan Home Centre
+      keyChainPay: KeyChain Pay
+      lifeKan: 生活館 Life Kan
+      lifeAtHome: 生活廊 Life@HOME
+      simmons: 蓆夢思 Simmons
+      ulfenbo: 歐化寶 Ulfenbo
+      ulferts: 歐化傢俬 Ulferts
+      # Electronic Appliances
+      avLife: 生活影音 AV Life
+      broadway: 百老滙 Broadway
+      bruno: BRUNO
+      chungYuenElectrical: 中原電器 Chung Yuen Electrical
       fortress: 豐澤 Fortress
-      broadway: 百老匯 Broadway
+      jSelect: J SELECT
+      ninkiDenki: 人気电器店 Ninki Denki
+      panasonic: Panasonic 陳列室 Panasonic Showroom
+      priceComHk: Price 網購 Price.com.hk
+      suning: 蘇寧 Suning
+      waiMingElectrical: 偉明電業 Wai Ming Electrical
+      whirlpool: 惠而浦網上商店 Whirlpool W-Mall
+      wilson: 衛訊 Wilson
+      yoho: 友和 YOHO
+      # Telecom Companies
+      3hk: 3香港 3HK / SUPREME
+      csl: csl / 1O1O / Club Sim
+      hkt: 香港電訊 HKT / 網上行 netvigator / Now TV
+      smarTone: SmarTone
   - red2025Shopping:
-      aeon: 永旺 AEON
+      # Department Stores
+      aeon: 永旺 AEON / AEON STYLE / AEON SUPERMARKET
+      apita: APITA
+      bentoExpress: 便當快線 Bento Express by AEON
+      chineseArtsCrafts: 中藝香港 Chinese Arts and Crafts HK
+      citistore: 千色 Citistore / C生活 Citilife
+      citysuper: city'super / city'super neighbourhood
+      citysuperNeighbourhood: citysuper neighbourhood
+      logOn: LOG-ON
+      guuSan: 谷辰 Guu San
+      hktvmall: HKTVmall
+      harveyNichols: HARVEY NICHOLS
+      livingPlaza: Living PLAZA by AEON
+      marksSpencer: MARKS and SPENCER
+      monoMono: Mono Mono
+      sincere: 先施百貨 Sincere
+      sogo: 崇光百貨 SOGO
+      uny: 生活創富 UNY
+      wingOnStore: 永安百貨 Wing On
+      yata: 一田 YATA
+      # Bookstores
+      chungHwaBook: 中華書局 Chung Hwa Book
+      esliteBookstore: 誠品書店 eslite bookstore
+      jointPublishing: 三聯書店 Joint Publishing
+      commercialPress: 商務印書館 The Commercial Press
+      # Fashion / Accessories
+      sevenForAllMankind: 7 For All Mankind
+      agnesB: agnès b
+      birkenstock: BIRKENSTOCK
+      brooksBrothers: Brooks Brothers
+      clubMonaco: Club Monaco
+      columbia: Columbia
+      crocs: Crocs
+      dmop: Dmop
+      decathlon: DECATHLON
+      ecco: ECCO
+      eggOpticalBoutique: eGG Optical Boutique
+      goWild: Go Wild
+      gu: GU
+      j01: J01
+      j01x1: J01 X1
+      mischMasch: MISCH MASCH
+      newEra: New Era
+      nical: NICAL
+      optical88: 眼鏡88 OPTICAL 88
+      orientalTraffic: ORiental Traffic
+      waOrientalTraffic: WA ORiental Traffic
+      rockport: ROCKPORT
+      skechers: SKECHERS
+      sportB: SPORT b
+      teva: Teva
+      theory: Theory
+      twist: TWIST
+      ugg: UGG
+      uniqlo: UNIQLO
+      y3: Y-3
+      zalora: ZALORA
+      zoff: Zoff
+      # Beauty
+      cosmeStore: '@cosme STORE'
+      beautyAvenue: BEAUTY AVENUE
+      guerlain: 法國嬌蘭 GUERLAIN
+      ipsa: IPSA
+      joyceBeauty: JOYCE BEAUTY
+      mtmLabo: mtm labo
+      timeByMtmLabo: TIME by mtm labo
+      spaByMtmLabo: SPA by mtm labo
+      nars: NARS
+      sasa: 莎莎 Sa Sa
+      sergeLutens: Serge Lutens
+      shiseido: SHISEIDO
+      sulwhasoo: 雪花秀 Sulwhasoo
+      # Wellness Grocery
+      namPeiHong: 南北行 Nam Pei Hong
+      osim: OSIM
+      oto: OTO
+      slowood: SLOWOOD
+      vitaGreen: 維特健靈 Vita Green
+      watsons: 屈臣氏 Watsons
+      # Others
+      agnesBFleuriste: agnes b FLEURISTE
+      cantevole: Cantevole
+      casetify: CASETiFY
+      laBoheme: La Bohéme
+      royce: ROYCE
+      watsonsWine: 屈臣氏酒窖 Watsons Wine

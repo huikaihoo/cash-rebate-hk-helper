@@ -1,4 +1,4 @@
-import type { DisplayText } from '@/logic/types'
+import type { DisplayText } from '@/logic/locales'
 
 export type RawOptionsRecords = { [key: string]: DisplayText | string }
 
