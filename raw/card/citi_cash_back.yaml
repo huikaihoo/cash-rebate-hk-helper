@@ -30,6 +30,9 @@ rebateList:
       physical: true
       local: false
       overseas: true
+    remarks:
+      zh: 在本地食肆、本地酒店或海外簽賬
+      en: For local dining, local hotel, or overseas spending.
   - level: 1
     percentage: 2
     categories:
@@ -42,6 +45,9 @@ rebateList:
       physical: true
       local: true
       overseas: false
+    remarks:
+      zh: 在本地食肆、本地酒店或海外(英國及歐洲經濟區除外)簽賬
+      en: For local dining, local hotel, or overseas (UK and EEA excluded) spending.
   - level: 0
     percentage: 1
     channel:

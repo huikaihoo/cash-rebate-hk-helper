@@ -42,6 +42,9 @@ rebateList:
       physical: true
       local: false
       overseas: true
+    remarks:
+      zh: 在「最紅自主獎賞」指定類別簽賬 (包括本地食肆和海外簽賬)
+      en: For eligible spending in Red Hot Rewards categories, including local dining and overseas spending.
   - level: 1
     percentage: 1
     categories:
@@ -56,6 +59,9 @@ rebateList:
       physical: true
       local: true
       overseas: false
+    remarks:
+      zh: 在「最紅自主獎賞」指定類別簽賬 (包括本地食肆和海外簽賬)
+      en: For eligible spending in Red Hot Rewards categories, including local dining and overseas spending.
   - level: 0
     percentage: 0.4
     channel:
@@ -78,7 +84,7 @@ rebateList:
     maxPeriod: monthly
     remarks:
       en: Only first $10,000 ebanking payment eligible for monthly rebate.
-      zh: 每月首$10,000網上繳費方可獲回贈。
+      zh: 每月首 $10,000 網上繳費方可獲回贈。
 rebateRemarks:
   zh: 需要在HSBC Reward+程式自行兌換。
   en: Redemption via HSBC Reward+ app required.

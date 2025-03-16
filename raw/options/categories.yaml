@@ -2,41 +2,50 @@ name: categories
 sortBy: default
 content:
   restaurant:
-    en: 'Restaurant (excl. fast food)'
-    zh: '餐廳 (不包括快餐店)'
+    en: 'Restaurant (excluding fast food)'
+    zh: '餐廳 (快餐店除外)'
   fastfood:
     en: 'Fast Food'
     zh: '快餐店'
   supermarket:
     en: 'Supermarket'
     zh: '超級市場'
-  departmentStore:
-    en: 'Department Store'
-    zh: '百貨公司'
   hotel:
     en: 'Hotel'
     zh: '酒店'
   electronics:
     en: 'Electronics'
     zh: '電子產品'
-  travel:
-    en: 'Travel'
-    zh: '旅遊'
-  transportation:
-    en: 'Transportation'
-    zh: '交通'
   entertainment:
     en: 'Entertainment'
     zh: '娛樂'
+  transportation:
+    en: 'Transportation'
+    zh: '交通'
+  sportwear:
+    en: 'Sportswear'
+    zh: '運動服飾'
+  fitness:
+    en: 'Fitness Center'
+    zh: '健身中心'
+  medical:
+    en: 'Medical Services'
+    zh: '醫療服務'
+  +specific:
+    en: 'Specific Category for Discount'
+    zh: '指定優惠類別'
   red2025LifeStyle:
-    en: 'Lifestyle - Red Hot Rewards 2025'
-    zh: '賞享受 - 滙豐最紅 2025'
+    en: 'Lifestyle - HSBC Red Hot Rewards 2025'
+    zh: '賞享受 - 滙豐「最紅自主獎賞」 2025'
   red2025Home:
-    en: 'Home - Red Hot Rewards 2025'
-    zh: '賞家居 - 滙豐最紅 2025'
+    en: 'Home - HSBC Red Hot Rewards 2025'
+    zh: '賞家居 - 滙豐「最紅自主獎賞」 2025'
   red2025Shopping:
-    en: 'Shopping - Red Hot Rewards 2025'
-    zh: '賞購物 - 滙豐最紅 2025'
+    en: 'Shopping - HSBC Red Hot Rewards 2025'
+    zh: '賞購物 - 滙豐「最紅自主獎賞」 2025'
+  +other:
+    en: 'Other'
+    zh: '其他'
   tax:
     en: 'Tax Payment'
     zh: '稅項'
