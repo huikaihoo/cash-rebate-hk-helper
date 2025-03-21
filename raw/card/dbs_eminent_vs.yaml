@@ -25,9 +25,9 @@ rebateList:
       include:
         - restaurant
         - fastfood
-        - medical
         - sportswear
         - fitness
+        - medical
     channel:
       online: true
       physical: true
@@ -40,6 +40,9 @@ rebateList:
     maxPeriod: monthly
     startDate: 2025-01-01
     endDate: 2025-12-31
+    remarks:
+      en: Spend over $300 on dining, sportswear, fitness clubs or medical services.
+      zh: 在餐飲、運動服飾、健身中心或醫療服務簽賬滿 $300
   - level: 1
     percentage: 1
     channel:
@@ -53,8 +56,8 @@ rebateList:
     startDate: 2025-01-01
     endDate: 2025-12-31
     remarks:
-      en: Only first $5,000 digital wallet spending eligible for monthly rebate.
-      zh: 每月首$5,000數碼錢包消費方可獲回贈。
+      en: For digital wallet spending, only first $5,000 eligible for monthly rebate.
+      zh: 如果透過電子錢包消費，只有每月首 $5,000 簽賬可獲回贈
   - level: 0
     percentage: 0.4
     channel:
@@ -64,8 +67,8 @@ rebateList:
       overseas: true
     excludeCbf: true
     remarks:
-      en: Only first $5,000 digital wallet spending eligible for monthly rebate.
-      zh: 每月首$5,000數碼錢包消費方可獲回贈。
+      en: For digital wallet spending, only first $5,000 eligible for monthly rebate.
+      zh: 如果透過電子錢包消費，只有每月首 $5,000 簽賬可獲回贈
 rebateRemarks:
   en: Annual registration via DBS Card+ app required for rebates. Rebates credited automatically monthly.
   zh: 每年須經DBS Card+應用程式登記方可獲回贈。回贈每月自動存入。

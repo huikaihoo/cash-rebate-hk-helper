@@ -1,4 +1,4 @@
-export enum CreditCardType {
+export enum CardType {
   Credit,
   Debit,
   Wallet,
@@ -10,11 +10,11 @@ export enum WaiverCondition {
   Forbidden,
 }
 
-export interface CreditCard {
+export interface Card {
   id: string
   name: string
   bankId: string
-  type: CreditCardType
+  type: CardType
   annualFee: {
     fee: number
     chargeAfter: number // no of years before annual fee is charged
@@ -70,5 +70,5 @@ export interface Rebate {
   maxPeriod?: Period // period for maximum spending amount to be calculated; cycle means from start date to end date
 }
 export interface RebateWithCard extends Rebate {
-  card: CreditCard
+  card: Card
 }

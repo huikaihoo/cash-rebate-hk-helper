@@ -1,9 +1,9 @@
-import type { DisplayText } from '@/logic/types'
+import type { DisplayText } from '@/logic/locales'
 
-export interface RawCreditCard {
+export interface RawCard {
   name: string
   bank: string
-  type: 'credit' | 'debit' | 'wallet' // Type of card (although the interface is named CreditCard, it can be debit or digital wallet)
+  type: 'credit' | 'debit' | 'wallet' // Type of card (although the interface is named as Card, it can be credit / debit card or digital wallet)
   links: {
     // url to official website, application form, etc.
     official: DisplayText

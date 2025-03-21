@@ -1,5 +1,5 @@
-import type { RawCreditCard } from '@/logic/credit-card/raw'
-import { transformCreditCards } from '@/logic/credit-card/transform'
+import type { RawCard } from '@/logic/card/raw'
+import { transformCards } from '@/logic/card/transform'
 import { Exporter } from '@/logic/export'
 import { Importer } from '@/logic/import'
 import type { RawOptions } from '@/logic/option/raw'
@@ -14,20 +14,29 @@ export function createData() {
   })
 
   const optionList = importer.importList<RawOptions>('options')
-  const cardMap = importer.importMap<RawCreditCard>('credit-card')
+  const cardMap = importer.importMap<RawCard>('card')
 
   // Validate & Transform
-  const { creditCards, rebates } = transformCreditCards(cardMap)
-  const options = transformOptions(optionList)
+  const { cards, rebates, rebatesLocales } = transformCards(cardMap)
+  const { options, optionsLocales } = transformOptions(optionList)
 
   // Export
-  const exporter = new Exporter({
+  const dataExporter = new Exporter({
     basePath: 'public/data',
   })
 
-  exporter.exportObject(options, 'options')
-  exporter.exportArray(creditCards, 'credit-cards')
-  exporter.exportArray(rebates, 'rebates')
+  dataExporter.exportObject(options, 'options')
+  dataExporter.exportArray(cards, 'cards')
+  dataExporter.exportArray(rebates, 'rebates')
+
+  const localesExporter = new Exporter({
+    basePath: 'public/locales',
+  })
+
+  localesExporter.exportObject(optionsLocales.zh, 'options.zh')
+  localesExporter.exportObject(optionsLocales.en, 'options.en')
+  localesExporter.exportObject(rebatesLocales.zh, 'rebates.zh')
+  localesExporter.exportObject(rebatesLocales.en, 'rebates.en')
 
   const endTime = performance.now()
   console.log(`Data processed in ${Math.round(endTime - startTime)}ms`)

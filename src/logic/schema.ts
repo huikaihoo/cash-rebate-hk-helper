@@ -46,7 +46,6 @@ export class SchemaGenerator {
     }
 
     const filePath = join(process.cwd(), this.config.basePath, outputFile)
-    // Create relative path for reporting, e.g. "schema/credit-card.json"
     const relativePath = join(this.config.basePath, outputFile)
 
     // Ensure the directory exists

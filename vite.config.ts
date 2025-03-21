@@ -27,7 +27,7 @@ export default defineConfig(({ mode }) => {
       DataPlugin(),
       PublicFileList({
         include: /^(\/data\/.*\.json|\/images\/.*)$/,
-        exclude: /\/(\.DS_Store|Thumbs\.db)$/,
+        exclude: /\/(\.DS_Store|Thumbs\.db|\.gitignore)$/,
         transform: (path) => path.replace(/\.(png|jpg|jpeg)$/i, '.webp'),
       }),
       WebpServePlugin(),

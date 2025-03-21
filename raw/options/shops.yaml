@@ -1,35 +1,226 @@
 name: shops
 sortBy: key
 content:
+  # restaurants
   - fastfood:
-      mcdonalds: 麥當勞 McDonald's
-      kfc: 肯德基 KFC
-  - supermarket:
-      parknshop: 百佳 PARKnSHOP
-      wellcome: 惠康 Wellcome
-      donki: 唐吉訶德 Don Don Donki
-  - departmentStore:
-      sogo: 崇光百貨 SOGO
-      aeon: 永旺 AEON
-  - convenienceStore:
+      mcdonalds: McDonald's 麥當勞
+      kfc: KFC 肯德基
+  - supermarket: # mox
+      759Store: 759 Store 759 阿信屋
+      bigC: Big C
+      dayDayStore: Day Day Store 日記士多
+      donki: Don Don Donki 唐吉訶德
+      dsGroceries: DS Groceries 大生生活超市
+      xinXianShengHuo: FRESH 新鮮生活
+      greenPrice: GreenPrice
+      hongKongFlavour: Hong Kong Flavour 本灣水產
+      parknshop: PARKnSHOP 百佳
+      parknshop2: (PARKnSHOP) FUSION / TASTE / TASTE x FRESH / INTERNATIONAL
+      parknshop3: (PARKnSHOP) food le parc / GOURMET / Great Food Hall
+      smartJhc: $mart 多來買
+      wellcome: Wellcome 惠康
+  # hotel
+  - electronics: # mmpower
+      avLife: AV Life 生活影音
+      broadway: Broadway 百老滙
+      bruno: BRUNO
+      chungYuenElectrical: Chung Yuen Electrical 中原電器
+      fortress: Fortress 豐澤
+      ninkiDenki: Ninki Denki 人気电器店
+      panasonic: Panasonic Showroom Panasonic 陳列室
+      suning: Suning 蘇寧
+      waiMingElectrical: Wai Ming Electrical 偉明電業
+      wilson: Wilson 衛訊
+      yoho: YOHO 友和
+  - entertainment: # mmpower
+      cgvCinemas: CGV Cinemas
+      emperorCinemas: Emperor Cinemas 英皇戲院
+      goldenHarvest: Golden Harvest 嘉禾院線
+      mcl: MCL Cinema
+      cityline: Cityline 購票通
+  # transportation
+  # sportswear
+  - fitness: # dbs eminent
+      beEarth: Be Earth
+      pureGroup: PURE Group
+      snapFitness: Snap Fitness
+      squareFitness: Square Fitness
+  # medical
+  - general:
       7eleven: 7-Eleven
-      circlek: OK 便利店 Circle K
-  - electronics:
-      fortress: 豐澤 Fortress
-      broadway: 百老匯 Broadway
-      yoho: 友和 YOHO
-  - any:
-      uniqlo: 優衣庫 Uniqlo
-      watsons: 屈臣氏 Watsons
-      mannings: 萬寧 Mannings
-      starbucks: 星巴克 Starbucks
+      circlek: Circle K OK 便利店
+      mannings: Mannings 萬寧
+      starbucks: Starbucks 星巴克
   - red2025LifeStyle:
+      # Fitness Centers
+      beEarth: Be Earth
+      pureGroup: PURE Group
+      snapFitness: Snap Fitness
+      squareFitness: Square Fitness
+      # Cinemas
+      cgvCinemas: CGV Cinemas
+      emperorCinemas: Emperor Cinemas 英皇戲院
+      goldenHarvest: Golden Harvest 嘉禾院線
+      mcl: MCL Cinema
+      # Entertainment
+      bakebe: bakebe 焙著你烘焙
+      cityline: Cityline 購票通
+      efEnglishCenters: EF English Centers
+      greeneryMusic: Greenery Music 青苗琴行
+      hkTicketing: HKTicketing 快達票
+      kkbox: KKBOX
+      kktix: KKTIX
+      moov: MOOV
+      newayCeoKaraoke: Neway CEO Karaoke
+      tomLeeMusic: Tom Lee Music 通利琴行
+      # Travel Agents
+      hutchgo: hutchgo
+      kkday: KKDay
       klook: Klook
+      miramarTravel: Miramar Travel 美麗華旅遊
+      sunflowerTravel: Sunflower Travel 新華旅遊
+      tripCom: Trip.com
+      wingOnTravel: Wing On Travel 永安旅遊
+      ymtTravel: YMT Travel 油麻地旅遊
+      # Personal Wellness
+      mooodMassage: Moood Massage 沐館
+      shhMassage: shh massage 靜
+      sunAndMoonMassage: Sun and Moon Massage 日月按摩
+      toniGuyHongKong: TONI&GUY HONG KONG
+      ziMassageWellness: 梔 Zi Massage & Wellness
+      # Transportation
+      caltex: Caltex 加德士
+      esso: Esso 埃索
+      shell: Shell 蜆殼 / Shell Recharge
+      hkeToll: HKeToll 易通行
+      hkTramways: HK Tramways 香港電車
+      kmb: KMB 九巴
+      ctb: Citybus 城巴
+      mtr: MTR 港鐵
   - red2025Home:
-      yoho: 友和 YOHO
-      parknshop: 百佳 PARKnSHOP
-      donki: 唐吉訶德 Don Don Donki
-      fortress: 豐澤 Fortress
-      broadway: 百老匯 Broadway
+      # Supermarkets
+      759Store: 759 Store 759 阿信屋
+      bigC: Big C
+      dayDayStore: Day Day Store 日記士多
+      donki: Don Don Donki 唐吉訶德
+      dsGroceries: DS Groceries 大生生活超市
+      xinXianShengHuo: FRESH 新鮮生活
+      greenPrice: GreenPrice
+      hongKongFlavour: Hong Kong Flavour 本灣水產
+      parknshop: PARKnSHOP 百佳
+      parknshop2: (PARKnSHOP) FUSION / TASTE / TASTE x FRESH / INTERNATIONAL
+      parknshop3: (PARKnSHOP) food le parc / GOURMET / Great Food Hall
+      smartJhc: $mart 多來買
+      # Home and Furniture
+      homeAndFurniture: Home and Furniture 家居用品
+      atHome: at.home
+      cityLife: City Life 生活提案
+      homeByElla: Home+ By Ella 生活工房
+      jhc: Japan Home Centre 日本城
+      keyChainPay: KeyChain Pay
+      lifeKan: Life Kan 生活館
+      lifeAtHome: Life@HOME 生活廊
+      simmons: Simmons 蓆夢思
+      ulfenbo: Ulfenbo 歐化寶
+      ulferts: Ulferts 歐化傢俬
+      # Electronic Appliances
+      avLife: AV Life 生活影音
+      broadway: Broadway 百老滙
+      bruno: BRUNO
+      chungYuenElectrical: Chung Yuen Electrical 中原電器
+      fortress: Fortress 豐澤
+      jSelect: J SELECT
+      ninkiDenki: Ninki Denki 人気电器店
+      panasonic: Panasonic Showroom Panasonic 陳列室
+      priceComHk: Price.com.hk Price 網購
+      suning: Suning 蘇寧
+      waiMingElectrical: Wai Ming Electrical 偉明電業
+      whirlpool: Whirlpool W-Mall 惠而浦網上商店
+      wilson: Wilson 衛訊
+      yoho: YOHO 友和
+      # Telecom Companies
+      3hk: 3HK 3香港 / SUPREME
+      csl: csl / 1O1O / Club Sim
+      hkt: HKT 香港電訊 / netvigator 網上行 / Now TV
+      smarTone: SmarTone
   - red2025Shopping:
-      aeon: 永旺 AEON
+      # Department Stores
+      aeon: AEON 永旺 / AEON STYLE / AEON Supermarket
+      # bentoExpress: Bento Express by AEON
+      livingPlaza: Living PLAZA by AEON
+      monoMono: Mono Mono
+      chineseArtsCrafts: Chinese Arts and Crafts HK 中藝香港
+      citistore: Citistore 千色 / Citilife C生活
+      uny: UNY 生活創富 / APITA UNY
+      citysuper: city'super / city'super neighbourhood
+      citysuperNeighbourhood: city'super neighbourhood
+      logOn: LOG-ON
+      guuSan: Guu San 谷辰
+      hktvmall: HKTVmall
+      harveyNichols: Harvey Nichols
+      marksSpencer: MARKS and SPENCER
+      sincere: Sincere 先施百貨
+      sogo: SOGO 崇光百貨
+      wingOnStore: Wing On 永安百貨
+      yata: YATA 一田
+      # Bookstores
+      chungHwaBook: Chung Hwa Book 中華書局
+      esliteBookstore: eslite bookstore 誠品書店
+      jointPublishing: Joint Publishing 三聯書店
+      commercialPress: Commercial Press 商務印書館
+      # Fashion / Accessories
+      7ForAllMankind: 7 For All Mankind
+      agnesB: agnès b. / agnès b. FLEURISTE
+      birkenstock: BIRKENSTOCK
+      brooksBrothers: Brooks Brothers
+      clubMonaco: Club Monaco
+      columbia: Columbia
+      crocs: Crocs
+      dmop: D-mop
+      decathlon: DECATHLON 迪卡儂
+      ecco: ECCO
+      eggOpticalBoutique: eGG Optical Boutique
+      goWild: Go Wild
+      gu: GU
+      j01: J-01 / J-01 X1
+      mischMasch: MISCH MASCH
+      newEra: New Era
+      nical: NICAL
+      optical88: OPTICAL 88 眼鏡88
+      orientalTraffic: ORiental Traffic / WA ORiental Traffic
+      rockport: ROCKPORT
+      skechers: SKECHERS
+      sportB: SPORT b.
+      teva: Teva
+      theory: Theory
+      twist: TWIST
+      ugg: UGG
+      uniqlo: UNIQLO 優衣庫
+      y3: Y-3
+      zalora: ZALORA
+      zoff: Zoff
+      # Beauty
+      cosmeStore: '@cosme STORE'
+      beautyAvenue: BEAUTY AVENUE
+      guerlain: GUERLAIN 法國嬌蘭
+      ipsa: IPSA
+      joyceBeauty: JOYCE BEAUTY
+      mtmLabo: mtm labo / TIME by mtm labo / SPA by mtm labo
+      nars: NARS
+      sasa: Sa Sa 莎莎
+      sergeLutens: Serge Lutens
+      shiseido: SHISEIDO
+      sulwhasoo: Sulwhasoo 雪花秀
+      # Wellness Grocery
+      namPeiHong: Nam Pei Hong 南北行
+      osim: OSIM
+      oto: OTO
+      slowood: SLOWOOD
+      vitaGreen: Vita Green 維特健靈
+      watsons: Watsons 屈臣氏
+      # Others
+      cantevole: Cantevole
+      casetify: CASETiFY
+      laBoheme: La Bohéme
+      royce: ROYCE' Chocolate ROYCE' 巧克力
+      watsonsWine: Watsons Wine 屈臣氏酒窖
